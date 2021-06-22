@@ -1,8 +1,16 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
+date: "Tuesday, June 22, 2021"
+output:
+  html_document: 
     keep_md: true
+    css: style.css
+    fig_height: 6
+    fig_width: 6
+    toc: yes
+    toc_depth: 3
+    toc_float: TRUE
+    code_folding: show
 ---
 
 
@@ -10,7 +18,7 @@ output:
 Report on Daily Activity
 ========================
 Jim Coen
-28 Aug 2018
+28 June 2021
 
 Introduction
 ------------
@@ -57,15 +65,17 @@ activity[ , date := as.Date(date)]
 summary(activity) %>% kable()
 ```
 
-         steps           date               interval  
----  -------------  -------------------  -------------
-     Min.   :  0    Min.   :2012-10-01   Min.   :   0 
-     1st Qu.:  0    1st Qu.:2012-10-16   1st Qu.: 589 
-     Median :  0    Median :2012-10-31   Median :1178 
-     Mean   : 37    Mean   :2012-10-31   Mean   :1178 
-     3rd Qu.: 12    3rd Qu.:2012-11-15   3rd Qu.:1766 
-     Max.   :806    Max.   :2012-11-30   Max.   :2355 
-     NA's   :2304   NA                   NA           
+
+
+|   |    steps    |     date          |   interval  |
+|:--|:------------|:------------------|:------------|
+|   |Min.   :  0  |Min.   :2012-10-01 |Min.   :   0 |
+|   |1st Qu.:  0  |1st Qu.:2012-10-16 |1st Qu.: 589 |
+|   |Median :  0  |Median :2012-10-31 |Median :1178 |
+|   |Mean   : 37  |Mean   :2012-10-31 |Mean   :1178 |
+|   |3rd Qu.: 12  |3rd Qu.:2012-11-15 |3rd Qu.:1766 |
+|   |Max.   :806  |Max.   :2012-11-30 |Max.   :2355 |
+|   |NA's   :2304 |NA                 |NA           |
 
 ```r
 n_obs <- nrow(activity)

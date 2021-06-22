@@ -1,8 +1,16 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
+date: "`r format(Sys.Date(), '%A, %B %d, %Y') `"
+output:
+  html_document: 
     keep_md: true
+    css: style.css
+    fig_height: 6
+    fig_width: 6
+    toc: yes
+    toc_depth: 3
+    toc_float: TRUE
+    code_folding: show
 ---
 
 ```{r r-parameters, include=FALSE}
@@ -17,7 +25,7 @@ options(comment = "")
 Report on Daily Activity
 ========================
 Jim Coen
-28 Aug 2018
+28 June 2021
 
 Introduction
 ------------

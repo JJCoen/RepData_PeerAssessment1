@@ -1,0 +1,59 @@
+#nextsteps{
+  color: darkblue
+}
+
+.emphasized{
+  font-size: 0.9em
+}
+
+.columns {display: flex; }
+
+body{
+  font-family: Helvetica;
+  font-size: 16px;
+}
+td {  /* Table  */      font-size: 16px; }
+title { font-size: 20px; color: darkred; }
+h1 { /* Header 1 */
+   font-size: 18px; color: DarkBlue; margin-top: 20px;}
+
+h2 { /* Header 2 */
+    font-size: 16px; color: DarkBlue; margin-top: 20px;}
+
+h3 {
+    /* Header 3 */     font-size: 16px; font-family: "Times New Roman", Times, serif; color: DarkBlue;
+}
+
+blockquote {
+  font-style: italic
+}
+
+.indigotext {
+    font-size: 16px;
+	color: #6f00ff;
+}
+
+/* Center workflowr buttons */
+.btn-workflowr {
+  display: block;
+  margin: auto;
+}
+
+
+/* Add red border around workflowr report button */
+.btn-workflowr-report {
+  border: red 5px solid;
+}
+
+
+/* Add blue border around workflowr past figure version buttons */
+.btn-workflowr-fig {
+  border: blue 5px solid;
+}
+
+
+/* Add purple border around workflowr session information button */
+.btn-workflowr-sessioninfo {
+  border: purple 5px solid;
+}
+
